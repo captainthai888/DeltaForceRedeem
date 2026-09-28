@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Delta Force Redeem</title><link rel="stylesheet" href="popup.css"></head>
+<body><header><div class="brand"><span class="logo">Δ</span><h1>Delta Force Redeem</h1></div><span id="connection" class="badge">CHƯA KẾT NỐI</span></header>
+<main><div class="session"><span id="account">Đăng nhập Garena để bắt đầu</span><button id="open" class="link">Mở trang đổi quà ↗</button></div>
+<label for="codes">Nhập mã quà tặng</label><textarea id="codes" placeholder="DFUTGEARTICKET&#10;GIFT_CODE_2 GIFT_CODE_3" spellcheck="false"></textarea><p class="hint">Phân cách bằng khoảng trắng hoặc xuống dòng. Mã đã gửi sẽ được bỏ qua.</p>
+<div class="delay"><label for="delay">Thời gian chờ mỗi code</label><input id="delay" type="range" min="1000" max="10000" step="500" value="1500"><output id="delayValue">1.5s</output></div>
+<div class="actions"><button id="start" class="primary">▶ Bắt đầu</button><button id="pause">Ⅱ Tạm dừng</button><button id="stop" class="danger">■ Dừng lại</button></div>
+<p id="error" role="alert"></p><section class="stats"><div class="numbers"><div><strong id="total">0</strong><small>TỔNG SỐ</small></div><div><strong id="processed">0</strong><small>ĐÃ XỬ LÝ</small></div><div><strong id="success">0</strong><small>THÀNH CÔNG</small></div><div><strong id="failed">0</strong><small>THẤT BẠI</small></div></div><div class="progressTitle"><span id="status">Sẵn sàng</span><span id="percent">0%</span></div><progress id="progress" max="100" value="0"></progress><p id="details" class="hint">Chưa có lượt chạy</p></section>
+<div class="logTitle"><h2>Nhật ký tiến trình</h2><button id="clearLog" class="link">Xóa nhật ký</button></div><div id="logs" role="log" aria-live="polite"></div><footer>Lịch sử được lưu trên máy · Đóng popup vẫn tiếp tục chạy</footer></main><script src="popup.js" type="module"></script></body></html>

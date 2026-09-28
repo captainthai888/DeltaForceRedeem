@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Delta Force Redeem",
+  "version": "1.0.0",
+  "description": "Đổi gift code Delta Force Garena theo hàng đợi, dùng phiên đăng nhập hiện tại.",
+  "permissions": ["storage", "cookies", "scripting"],
+  "host_permissions": ["https://redeem.df.garena.sg/*"],
+  "background": {"service_worker": "background.js", "type": "module"},
+  "action": {"default_title": "Delta Force Redeem", "default_popup": "popup.html", "default_icon": {"16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png"}},
+  "icons": {"16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png"}
+}
